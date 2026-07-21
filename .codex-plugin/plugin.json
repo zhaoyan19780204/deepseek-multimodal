@@ -1,0 +1,18 @@
+{
+  "name": "deepseek",
+  "version": "1.0.0",
+  "description": "让 DeepSeek 通过安格斯（Agnes）获得读图和生图能力。安装时需录入安格斯 API Key。读图/生图结果放到 ~/Desktop/DeepSeek/，不污染对话上下文。",
+  "author": {
+    "name": "赵老师"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "赵老师的DeepSeek多模态",
+    "shortDescription": "让 DeepSeek 透明调用安格斯读图和生图，上下文不爆炸",
+    "longDescription": "DeepSeek 是纯文本模型，本身不支持图片。本插件在后台调用安格斯（Agnes）完成所有图片工作：读图时转成文字描述传给 DeepSeek，生图时直接保存到桌面文件夹。所有 API 调用走项目 localhost:4310，不自拼 JSON、不传 base64、不累积对话历史。",
+    "developerName": "赵老师",
+    "category": "Productivity",
+    "capabilities": ["image-generation", "vision", "context-management"],
+    "defaultPrompt": "我已安装赵老师的DeepSeek多模态插件，可以用安格斯帮我读图和生图了。"
+  }
+}
